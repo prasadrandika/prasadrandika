@@ -2,6 +2,8 @@
 
 I help teams migrate apps off retiring AI models before they break.
 
+Hire me: https://prasadrandika.github.io
+
 OpenAI is shutting down **GPT-4o, GPT-4o mini, GPT-4.1 and GPT-4.1 mini** in the API on **January 14, 2027**. After that date, any app that still calls them will fail. I find every place an app depends on the old model, move it to the recommended replacement, test it, and document the change.
 
 ## Migration case studies
