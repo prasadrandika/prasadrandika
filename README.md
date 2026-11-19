@@ -13,7 +13,7 @@ OpenAI is shutting down **GPT-4o, GPT-4o mini, GPT-4.1 and GPT-4.1 mini** in the
 - **Problem:** The app answered questions with `gpt-4o-mini`, which will stop working on Jan 14, 2027.
 - **What I found:** The replacement, `gpt-6-luna`, is a reasoning model, and some reasoning models reject a `temperature` setting. I checked what the app's locked LangChain version sends for the new model: no `temperature`, so no package upgrade was needed.
 - **Fix:** I opened a PR switching the model to `gpt-6-luna`, tested against a mock OpenAI server. After that, the maintainer applied the model change himself ([`139efd3`](https://github.com/gurezende/Basic-Rag/commit/139efd3)), so my PR now only fixes the outdated "GPT-4" mentions in the README.
-- **Links:** [My fork, with migration notes](https://github.com/prasadrandika/Basic-Rag/tree/migration-notes) · [Pull request (open)](https://github.com/gurezende/Basic-Rag/pull/2)
+- **Links:** [My fork, with migration notes](https://github.com/prasadrandika/Basic-Rag/tree/migration-notes) · [Pull request (merged)](https://github.com/gurezende/Basic-Rag/pull/2)
 
 ### 2. youtube_transcription_api: punctuates YouTube transcripts (Python, Flask)
 
