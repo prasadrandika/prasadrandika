@@ -26,8 +26,8 @@ OpenAI is shutting down **GPT-4o, GPT-4o mini, GPT-4.1 and GPT-4.1 mini** in the
 
 - **Problem:** The `llm_prompt` helper defaulted to `gpt-4o-mini`.
 - **What I found:** The shared client in `projectdiscovery/utils` always sent `temperature: 0`, which may not work with the newest reasoning models. The maintainer confirmed it was a real problem.
-- **Outcome:** I opened an issue first. The maintainer fixed the temperature problem in utils v0.11.15 and opened a PR with my commit plus the utils bump.
-- **Links:** [Issue #381 (open)](https://github.com/projectdiscovery/dsl/issues/381) · [Pull request #382 (open)](https://github.com/projectdiscovery/dsl/pull/382)
+- **Outcome:** I opened an issue first. The maintainer fixed the temperature problem in utils v0.11.15 and opened a PR with my commit plus the utils bump. My commit is now part of ProjectDiscovery's dsl.
+- **Links:** [Issue #381 (closed as completed)](https://github.com/projectdiscovery/dsl/issues/381) · [Pull request #382 (merged)](https://github.com/projectdiscovery/dsl/pull/382)
 
 ## More migration work
 
