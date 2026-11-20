@@ -34,7 +34,7 @@ OpenAI is shutting down **GPT-4o, GPT-4o mini, GPT-4.1 and GPT-4.1 mini** in the
 Anthropic retires Claude Sonnet 4.5 on the Claude API on **November 30, 2026** ([model deprecations](https://platform.claude.com/docs/en/about-claude/model-deprecations)). The replacement, `claude-sonnet-5-5`, rejects `temperature`, `top_p` and `top_k`, and its replies can start with a thinking block.
 
 - **OpenClacky** (Ruby): moved the default Claude model to `claude-sonnet-5-5` and checked that no sampling settings are sent: [#737 (merged)](https://github.com/clacky-ai/openclacky/pull/737)
-- **ai-scanner** (Ruby, 0DIN by Mozilla): moved the Anthropic preset to `claude-sonnet-5-5` and fixed response parsing for replies that start with a thinking block: [#221 (open)](https://github.com/0din-ai/ai-scanner/pull/221)
+- **ai-scanner** (Ruby, 0DIN by Mozilla): moved the Anthropic preset to `claude-sonnet-5-5` and fixed response parsing for replies that start with a thinking block: [#221 (merged)](https://github.com/0din-ai/ai-scanner/pull/221)
 - **kit** (Go, Mark III Labs): moved all built-in defaults to `claude-sonnet-5-5`, with tests that fail if a default model is marked deprecated: [#273 (open)](https://github.com/mark3labs/kit/pull/273)
 
 ## More migration work
