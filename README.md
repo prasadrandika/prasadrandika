@@ -29,6 +29,14 @@ OpenAI is shutting down **GPT-4o, GPT-4o mini, GPT-4.1 and GPT-4.1 mini** in the
 - **Outcome:** I opened an issue first. The maintainer fixed the temperature problem in utils v0.11.15 and opened a PR with my commit plus the utils bump. My commit is now part of ProjectDiscovery's dsl.
 - **Links:** [Issue #381 (closed as completed)](https://github.com/projectdiscovery/dsl/issues/381) · [Pull request #382 (merged)](https://github.com/projectdiscovery/dsl/pull/382)
 
+## Claude Sonnet 4.5 → claude-sonnet-5-5
+
+Anthropic retires Claude Sonnet 4.5 on the Claude API on **November 30, 2026** ([model deprecations](https://platform.claude.com/docs/en/about-claude/model-deprecations)). The replacement, `claude-sonnet-5-5`, rejects `temperature`, `top_p` and `top_k`, and its replies can start with a thinking block.
+
+- **OpenClacky** (Ruby): moved the default Claude model to `claude-sonnet-5-5` and checked that no sampling settings are sent: [#737 (merged)](https://github.com/clacky-ai/openclacky/pull/737)
+- **ai-scanner** (Ruby, 0DIN by Mozilla): moved the Anthropic preset to `claude-sonnet-5-5` and fixed response parsing for replies that start with a thinking block: [#221 (open)](https://github.com/0din-ai/ai-scanner/pull/221)
+- **kit** (Go, Mark III Labs): moved all built-in defaults to `claude-sonnet-5-5`, with tests that fail if a default model is marked deprecated: [#273 (open)](https://github.com/mark3labs/kit/pull/273)
+
 ## More migration work
 
 - **WeClaw** (Go): HTTP agents fell back to `gpt-4o-mini`. A PR with a test: [#88 (open)](https://github.com/fastclaw-ai/weclaw/pull/88)
